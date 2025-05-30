@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heloisa Bolognesi - Desenvolvedora Frontend</title>
+    <meta name="description" content="Portfolio de Heloisa Bolognesi, desenvolvedora frontend especializada em React, Vue.js e tecnologias modernas.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Partículas de fundo -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Heloisa Bolognesi</span>
+                <span class="logo-symbol">&lt;/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-text="Home">Home</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#certifications" data-text="Certifications">Certificações</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+                <li><a href="timeline.html" data-text="Timeline">Timeline</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="typing-container">
+                    <span class="typing-text">console.log("Hello World!");</span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="Heloisa Bolognesi">Heloisa Bolognesi</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="code-bracket">&lt;</span>
+                    <span class="role-text">Frontend Developer</span>
+                    <span class="code-bracket">/&gt;</span>
+                </div>
+                <p class="hero-description">
+                    Transformo código em soluções e desafios em oportunidades, com propósito, paixão e presença feminina na tecnologia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contato</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="deconstructed-photo">
+                    <div class="photo-container">
+                        <div class="photo-main">
+                            <img src="./img/eu3.png" alt="Heloisa Bolognesi">
+                        </div>
+                        <div class="photo-fragments">
+                            <div class="fragment fragment-1"></div>
+                            <div class="fragment fragment-2"></div>
+                            <div class="fragment fragment-3"></div>
+                            <div class="fragment fragment-4"></div>
+                        </div>
+                        <div class="geometric-shapes">
+                            <div class="shape shape-triangle"></div>
+                            <div class="shape shape-circle"></div>
+                            <div class="shape shape-square"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">&lt;/&gt; Sobre mim</span>
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">heloisa@developer:~$</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> whoami
+                            </div>
+                            <div class="terminal-output">
+                                <p>Prazer, Heloisa Bolognesi! Uma desenvolvedora apaixonada por criar experiências digitais que conectam tecnologia e criatividade. Minha jornada no mundo da programação começou com curiosidade e se transformou em uma verdadeira paixão.</p>
+                                <p>Atualmente, estudo Desenvolvimento de Sistemas no SENAI Morvan Figueiredo, onde venho aprimorando minhas habilidades em front-end e design UI/UX.</p>
+                                <p>Busco sempre equilibrar funcionalidade, estética e usabilidade em cada projeto. Acredito que a tecnologia deve ser acessível e intuitiva.</p>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> cat skills.json
+                            </div>
+                            <div class="terminal-output">
+                                {<br>
+                                &nbsp;&nbsp;"frontend": ["React", "Vue.js", "JavaScript", "TypeScript"],<br>
+                                &nbsp;&nbsp;"styling": ["CSS3", "SASS", "Tailwind", "Styled Components"],<br>
+                                &nbsp;&nbsp;"tools": ["Git", "Webpack", "Vite", "Figma"],<br>
+                                &nbsp;&nbsp;"backend": ["Node.js", "Express", "MongoDB"]<br>
+                                }
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="cursor-blink">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Cafés</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Certificações</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">Horas de Código</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">&lt;/&gt; Minhas habilidades</span>
+                </h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-left">
+                    <div class="skills-categories">
+                        <div class="skill-category active" data-category="frontend">
+                            <i class="fab fa-react"></i>
+                            <span>Frontend</span>
+                        </div>
+                        <div class="skill-category" data-category="backend">
+                            <i class="fas fa-server"></i>
+                            <span>Backend</span>
+                        </div>
+                        <div class="skill-category" data-category="tools">
+                            <i class="fas fa-tools"></i>
+                            <span>Tools</span>
+                        </div>
+                        <div class="skill-category" data-category="design">
+                            <i class="fas fa-palette"></i>
+                            <span>Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-chart-container">
+                        <button class="chart-toggle btn btn-secondary">
+                            <i class="fas fa-chart-bar"></i> Alternar Gráfico
+                        </button>
+                        <h3 class="chart-title">Progresso de Aprendizado</h3>
+                        <canvas id="skillsChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+
+                <div class="skills-right">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="editor-title">skills.jsx</div>
+                        </div>
+                        <div class="editor-content">
+                            <div class="line-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>11</span>
+                                <span>12</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="keyword">const</span> <span class="variable">skills</span> = {
+                                </div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;<span class="property">frontend</span>: [
+                                </div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'React'</span>, <span class="string">'Vue.js'</span>,
+                                </div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'JavaScript'</span>, <span class="string">'TypeScript'</span>
+                                </div>
+                                <div class="code-line">&nbsp;&nbsp;],</div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;<span class="property">backend</span>: [
+                                </div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Node.js'</span>, <span class="string">'Express'</span>,
+                                </div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'MongoDB'</span>, <span class="string">'PostgreSQL'</span>
+                                </div>
+                                <div class="code-line">&nbsp;&nbsp;],</div>
+                                <div class="code-line">
+                                    &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">'∞'</span>
+                                </div>
+                                <div class="code-line">};</div>
+                                <div class="code-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">&lt;/&gt; Meus Projetos</span>
+                </h2>
+                <p class="section-subtitle">Alguns dos projetos que desenvolvi recentemente</p>
+            </div>
+
+            <div class="projects-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Landing Page Responsiva">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-header">
+                                        <h3>Landing Page Responsiva</h3>
+                                        <div class="project-grade">9.5/10</div>
+                                    </div>
+                                    <p>Landing page moderna para startup de tecnologia, focando em conversão e experiência mobile-first.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">SASS</span>
+                                    </div>
+                                    <div class="project-date">Fevereiro 2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Dashboard Analytics">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-header">
+                                        <h3>Dashboard Analytics</h3>
+                                        <div class="project-grade">9.8/10</div>
+                                    </div>
+                                    <p>Dashboard interativo para visualização de dados, com gráficos dinâmicos e interface intuitiva.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Chart.js</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">Styled Components</span>
+                                    </div>
+                                    <div class="project-date">Março 2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="E-commerce Platform">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-header">
+                                        <h3>E-commerce Platform</h3>
+                                        <div class="project-grade">9.7/10</div>
+                                    </div>
+                                    <p>Plataforma de e-commerce completa com carrinho de compras e sistema de pagamento.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">Vuex</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </div>
+                                    <div class="project-date">Abril 2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="/placeholder.svg?height=250&width=400" alt="Chat Application">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-header">
+                                        <h3>Real-time Chat App</h3>
+                                        <div class="project-grade">9.9/10</div>
+                                    </div>
+                                    <p>Aplicativo de chat em tempo real com salas personalizadas e notificações push.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Socket.io</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">Redis</span>
+                                        <span class="tech-tag">PWA</span>
+                                    </div>
+                                    <div class="project-date">Maio 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="timeline.html" class="btn btn-primary btn-more-projects">
+                    <span>Ver Timeline dos Projetos</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">&lt;/&gt; Minhas Certificações</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon react-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">React Developer Certification</h3>
+                        <div class="cert-issuer">Meta</div>
+                        <div class="cert-date">Data de Emissão: 03/2023</div>
+                        <p class="cert-description">
+                            Certificação avançada em desenvolvimento React, incluindo hooks, context API e performance optimization.
+                        </p>
+                        <a href="#" class="cert-button">
+                            <span>Ver Credencial</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon js-icon">
+                        <span class="js-text">JS</span>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">JavaScript Advanced Concepts</h3>
+                        <div class="cert-issuer">freeCodeCamp</div>
+                        <div class="cert-date">Data de Emissão: 02/2023</div>
+                        <p class="cert-description">
+                            Conceitos avançados de JavaScript, incluindo closures, prototypes, async/await e ES6+.
+                        </p>
+                        <a href="#" class="cert-button">
+                            <span>Ver Credencial</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon design-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">UI/UX Design Fundamentals</h3>
+                        <div class="cert-issuer">Google</div>
+                        <div class="cert-date">Data de Emissão: 01/2023</div>
+                        <p class="cert-description">
+                            Fundamentos de design de interface e experiência do usuário, prototipagem e design thinking.
+                        </p>
+                        <a href="#" class="cert-button">
+                            <span>Ver Credencial</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications-footer">
+                <p class="cert-footer-text">
+                    Sempre em busca de novos conhecimentos e certificações para me manter atualizada com as últimas tecnologias.
+                </p>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i>
+                    <span>Ver Todas as Certificações</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="code-comment">&lt;/&gt; Vamos nos conectar?</span>
+                </h2>
+                <p class="section-subtitle">Entre em contato comigo através das redes sociais</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:heloisa.bolognesi@aluno.senai.br" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>heloisa.bolognesi@aluno.senai.br</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/heloisabolognesi" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/heloisabolognesi</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="https://github.com/heloisabolognesi" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>github.com/heloisabolognesi</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/heloisabolognesi" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Instagram</h3>
+                        <p>@heloisabolognesi</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="tel:+5511999999999" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Telefone</h3>
+                        <p>+55 (11) 99999-9999</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/heloisabolognesi" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Twitter</h3>
+                        <p>@heloisabolognesi</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Heloisa Bolognesi. Desenvolvido com ❤️ e muito ☕</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/heloisabolognesi" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/heloisabolognesi" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/heloisabolognesi" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/heloisabolognesi" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
