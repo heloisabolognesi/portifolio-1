@@ -1,0 +1,235 @@
+/* Ínicio do texto de apresentação */
+.about {
+    align-items: flex-start;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.about article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.about h1 {
+    animation: title 2s;
+}
+
+@keyframes title {
+    from {
+        transform: translate(900px);
+    }
+}
+
+.about h2 {
+    animation: subtitle 1s;
+    color: var(--gray-3);
+    font-weight: 900;
+    font-size: 60px;
+    padding: 1rem 0;
+}
+
+/* Animação da tag h2 da classe=about */
+@keyframes subtitle {
+    from {
+        transform: translate(0, -200px);
+    }
+}
+
+.about h3 {
+    animation: text 1s;
+    color: var(--black);
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.about p {
+    animation: text 2s;
+}
+
+/* Animação das tags h3 e p da classe=about */
+@keyframes text {
+    from {
+        transform: translate(-700px);
+    }
+}
+/* fim */
+
+/* Botão do CV*/
+.cv:nth-child(1) {
+    border: none;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 1.5rem;
+    margin: 3px 0px 0px 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 8px var(--black);
+}
+
+.cv:nth-child(1):hover {
+    background: var(--green-4);
+    border: none;
+    box-shadow: 3px 5px var(--white);
+    color: var(--blue-10);
+    margin: 0 5px 3px 0px;
+    text-shadow: none;
+    transition: 600ms;
+}
+/* fim */
+
+/* Botão do CV */
+.about article div {
+    animation: btn-cv 2.3s;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Animação do botão CV */
+@keyframes btn-cv {
+    from {
+        transform: translate(0, 500px);
+    }
+}
+
+/* Box da imagem de perfil */
+.flip {
+    animation: flip 2s;
+    background-color: transparent;
+    border: solid 10px var(--rose-4);
+    border-radius: 100%;
+    height: 400px;
+    padding: 1rem;
+    width: 400px;
+}
+
+.flip:hover {
+    border-color: var(--gray-3);
+    box-shadow: 0 0 40px var(--white);
+    transition: 600ms;
+}
+
+/* Efeito de animação da borda da foto do perfil */
+@keyframes flip {
+    from {
+        transform: translate(600px, 600px);
+    }
+}
+
+/* Minha foto de perfil */
+.flip img{
+    animation: photo 2.1s;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    transition: 1s;
+}
+
+/* Efeito de animação da foto de perfil */
+@keyframes photo {
+    from {
+        transform: translate(600px);
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+/* .flip img:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+} */
+/* fim */
+
+/* Responsividade */
+@media screen and (min-width: 1440px) {
+    .about {
+        justify-content: space-evenly;
+        padding: 5rem 0;
+    }
+
+    .about nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .about h1 {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .about article {
+        align-items: center;
+        width: 80%;
+    }
+    
+    .about p {
+        text-align: justify;
+    }
+
+    .about article div {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about h1 {
+        line-height: 22px;
+    }
+
+    .about h2, 
+    .about h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about nav {
+        height: 200px;
+    }
+    
+    .flip {
+        border: solid .5rem var(--rose-4);
+        height: 300px;
+        margin: 0 10%;
+        width: 300px;
+    }
+    
+    .flip img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .social-networking {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .flip, .flip img {
+        height: 250px;
+        width: 250px;
+    }
+}
+/* fim */

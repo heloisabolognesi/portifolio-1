@@ -1,0 +1,209 @@
+.i-code {
+	color: var(--green-6);
+	padding-top: .5rem;
+	width: 40px;
+}
+
+@media (max-width: 425px) {
+	.i-code {
+		width: 30px;
+	}
+}
+
+header {
+    align-items: center;
+    background-color: var(--blue-10);
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header div {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+header > div a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header p {
+    padding-left: .4rem;
+}
+
+/* Ínicio dos estilos da fonte do logotipo Yutty Takeyama*/
+header p:nth-child(2) {
+    color: var(--white);
+    padding-left: .8rem;
+    text-shadow: var(--cyan-4) -1.4px 0px, var(--pink-5) 1.4px 0px;
+}
+
+header p:nth-child(3), .underline {
+    color: var(--fuchsia-5);
+}
+
+/* fim */
+/* Efeito de animação do underline no logo do cabeçalho */
+.underline {
+    font-weight: bolder;
+    animation: beat-fade 2s linear infinite;
+}
+
+@keyframes beat-fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* fim */
+/* Menu de navegação */
+.menu {
+    display: block;
+    padding-right: 5%;
+}
+
+.menu a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 .5rem;
+    text-decoration: none;
+    width: auto;
+}
+
+.menu a:hover {
+    color: var(--green-5);
+    text-shadow: 0 0 5px var(--white);
+}
+
+/* fim */
+
+.bars {
+    display: none;
+}
+
+/* Responsividade */
+@media (min-width: 1024px) {
+    .menu-container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .menu-container {
+        min-width: 85%;
+    }
+
+
+    /* Menu hamburguer */
+    .bars {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    .bar1, .bar2, .bar3 {
+        background-color: var(--white);
+        width: 30px;
+        height: 3px;
+        margin: 9px 0;
+        transition: .5s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 12px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -12px) rotate(45deg);
+    }
+
+    /* fim */
+    /* Menu navegação */
+    .hide-menu {
+        display: none!important;
+    }
+
+    .menu {
+        background-color: #0c003ace;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5rem;
+        padding: 2rem 0;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        animation: fadein 1s;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes fadein {
+        from {
+            top: -300px;
+        }
+
+        to {
+            top: 90px;
+        }
+    }
+
+    #hide-menu {
+        display: none;
+    }
+
+    .menu > .contact {
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu > .contact:hover {
+        box-shadow: none;
+        color: var(--green-5);
+        margin: 0;
+        text-shadow: 0 0 5px var(--white);
+        transition: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header div {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+}
+
+.menu-container {
+    width: 320px;
+    justify-content: space-between;
+    height: 90px;
+    background-color: var(--blue-10);
+    z-index: 2;
+}

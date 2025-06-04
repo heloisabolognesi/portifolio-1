@@ -1,0 +1,207 @@
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  /* Efeito glass */
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(7.7px);
+  /* fim */
+}
+
+.card p {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.status {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  margin: 0.5rem;
+  padding: .3rem 1rem;
+}
+
+.card-skill {
+  width: 200px;
+}
+
+.card-tool {
+  min-width: 140px;
+}
+
+.card-tool:first-child {
+  margin-left: 4.5rem;
+}
+
+.card-project {
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  width: 500px;
+}
+
+.img-project {
+  height: 100px;
+  width: 200px;
+}
+
+.btn-projects {
+  border: none;
+  color: var(--white);
+  align-items: baseline;
+}
+
+.card-project>div:first-child {
+  margin-right: 1rem;
+}
+
+.card-badge {
+  font-size: 14px;
+  color: var(--gray-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+/* Bordas dos cards*/
+.border-cyan:hover {
+  box-shadow: 0 0 20px var(--cyan-6);
+  border: solid 1.4px var(--cyan-4);
+  transition: 500ms;
+}
+
+.border-fuchsia:hover {
+  box-shadow: 0 0 20px var(--fuchsia-8);
+  border: solid 1.4px var(--fuchsia-5);
+  transition: 500ms;
+}
+
+.border-green:hover {
+  box-shadow: 0 0 20px var(--green-5);
+  border: solid 1.4px var(--green-4);
+  transition: 500ms;
+}
+
+/* fim */
+
+/* emoji dos cards*/
+.emoji-hand,
+.emoji-smile,
+.emoji-handshake,
+.emoji-paper,
+.emoji-pen {
+  width: 60px;
+}
+
+/* fim */
+
+@media screen and (min-width: 375px) {
+  .card-tool:first-child {
+    margin-left: 6.3rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .card-tool {
+    min-width: 200px;
+  }
+
+  .card-tool:first-child {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .card-tool:first-child {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .card-tool:first-child {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .card-tool {
+    min-width: 140px;
+  }
+
+  .card-tool:first-child {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .card-tool:first-child {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-tool:first-child {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card-tool:first-child {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .card-tool:first-child {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .card-tool:first-child {
+    margin-left: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-project {
+    height: auto;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .emoji-hand,
+  .emoji-smile,
+  .emoji-handshake,
+  .emoji-paper,
+  .emoji-pen {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-project {
+    flex-direction: column;
+  }
+
+  .card-project>div:first-child {
+    margin: 0;
+  }
+}

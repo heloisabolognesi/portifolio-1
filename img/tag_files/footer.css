@@ -1,0 +1,26 @@
+footer {
+    background-color: var(--blue-10);
+    color: var(--gray-2);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    height: auto;
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer span {
+    padding-left: .5rem;
+}
+
+.fa-heart {
+	color: var(--red-6);
+}
+
+@media screen and (max-width: 526px) {
+    footer span {
+        margin-top: 1rem;
+    }
+}
