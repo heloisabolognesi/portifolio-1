@@ -66,147 +66,186 @@
     </section>
 
     <!-- Timeline Section -->
-    <section id="timeline" class="timeline-section">
-        <div class="container">
-            <div class="timeline">
-                <div class="timeline-line"></div>
+    div class="timeline-container">
+        <div class="timeline-header">
+            <h1 class="timeline-title">Minha Jornada</h1>
+            <p class="timeline-subtitle">Acompanhe meu progresso e conquistas ao longo do tempo</p>
+        </div>
 
-                <!-- 2025 -->
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <span class="year">2025</span>
-                            <span class="month">Maio</span>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-image">
-                                <img src="/placeholder.svg?height=200&width=300" alt="Chat App">
-                            </div>
-                            <div class="timeline-info">
-                                <h3>Real-time Chat Application</h3>
-                                <p>Aplicativo de chat em tempo real com Socket.io, salas personalizadas e notificações push. Implementação de PWA para experiência mobile nativa.</p>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">Socket.io</span>
-                                    <span class="tech-tag">Express</span>
-                                    <span class="tech-tag">Redis</span>
-                                    <span class="tech-tag">PWA</span>
-                                </div>
-                                <div class="timeline-links">
-                                    <a href="#" class="timeline-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
-                                    </a>
-                                    <a href="#" class="timeline-link">
-                                        <i class="fab fa-github"></i>
-                                        Código
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Fevereiro 2024 -->
+        <div class="month-section">
+            <div class="month-header">
+                <div class="month-icon">FEV</div>
+                <div class="month-info">
+                    <h2>Fevereiro</h2>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="projects-carousel" data-month="feb">
+                <button class="carousel-nav-btn prev" onclick="prevProject('feb')">‹</button>
+                <button class="carousel-nav-btn next" onclick="nextProject('feb')">›</button>
+                <div class="projects-track" data-track="feb">
+                    <div class="project-card">
+                        <h3 class="project-title">Início dos Estudos em React</h3>
+                        <p class="project-description">Comecei a aprender React e seus conceitos fundamentais, incluindo componentes, JSX e gerenciamento de estado.</p>
+                        <span class="project-date">15 de Fevereiro</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Primeiro Projeto Prático</h3>
+                        <p class="project-description">Desenvolvi minha primeira aplicação React - uma lista de tarefas interativa com funcionalidades completas.</p>
+                        <span class="project-date">28 de Fevereiro</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Fundamentos de JavaScript</h3>
+                        <p class="project-description">Aprofundei conhecimentos em JavaScript ES6+, incluindo arrow functions, destructuring e modules.</p>
+                        <span class="project-date">20 de Fevereiro</span>
                     </div>
                 </div>
+                <div class="carousel-indicators" data-indicators="feb"></div>
+            </div>
+        </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <span class="year">2025</span>
-                            <span class="month">Abril</span>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-image">
-                                <img src="/placeholder.svg?height=200&width=300" alt="E-commerce">
-                            </div>
-                            <div class="timeline-info">
-                                <h3>E-commerce Platform</h3>
-                                <p>Plataforma completa de e-commerce com Vue.js, sistema de carrinho, pagamentos integrados e painel administrativo para gestão de produtos.</p>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">Vue.js</span>
-                                    <span class="tech-tag">Vuex</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">MongoDB</span>
-                                </div>
-                                <div class="timeline-links">
-                                    <a href="#" class="timeline-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
-                                    </a>
-                                    <a href="#" class="timeline-link">
-                                        <i class="fab fa-github"></i>
-                                        Código
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Março 2024 -->
+        <div class="month-section">
+            <div class="month-header">
+                <div class="month-icon">MAR</div>
+                <div class="month-info">
+                    <h2>Março</h2>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="projects-carousel" data-month="mar">
+                <button class="carousel-nav-btn prev" onclick="prevProject('mar')">‹</button>
+                <button class="carousel-nav-btn next" onclick="nextProject('mar')">›</button>
+                <div class="projects-track" data-track="mar">
+                    <div class="project-card">
+                        <h3 class="project-title">Aprofundamento em JavaScript</h3>
+                        <p class="project-description">Estudei conceitos avançados como closures, promises, async/await e manipulação do DOM.</p>
+                        <span class="project-date">05 de Março</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Projeto de Portfolio</h3>
+                        <p class="project-description">Iniciei o desenvolvimento do meu portfólio pessoal com foco em design responsivo e acessibilidade.</p>
+                        <span class="project-date">20 de Março</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">CSS Avançado</h3>
+                        <p class="project-description">Aprendi técnicas avançadas de CSS incluindo Grid, Flexbox e animações complexas.</p>
+                        <span class="project-date">12 de Março</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Sistema de Componentes</h3>
+                        <p class="project-description">Criei meu primeiro sistema de componentes reutilizáveis para acelerar o desenvolvimento.</p>
+                        <span class="project-date">25 de Março</span>
                     </div>
                 </div>
+                <div class="carousel-indicators" data-indicators="mar"></div>
+            </div>
+        </div>
 
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <span class="year">2025</span>
-                            <span class="month">Março</span>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-image">
-                                <img src="/placeholder.svg?height=200&width=300" alt="Dashboard">
-                            </div>
-                            <div class="timeline-info">
-                                <h3>Dashboard Analytics</h3>
-                                <p>Dashboard interativo para visualização de dados com React e TypeScript. Gráficos dinâmicos, filtros avançados e exportação de relatórios.</p>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">TypeScript</span>
-                                    <span class="tech-tag">Chart.js</span>
-                                    <span class="tech-tag">Styled Components</span>
-                                </div>
-                                <div class="timeline-links">
-                                    <a href="#" class="timeline-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
-                                    </a>
-                                    <a href="#" class="timeline-link">
-                                        <i class="fab fa-github"></i>
-                                        Código
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Abril 2024 -->
+        <div class="month-section">
+            <div class="month-header">
+                <div class="month-icon">ABR</div>
+                <div class="month-info">
+                    <h2>Abril</h2>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="projects-carousel" data-month="apr">
+                <button class="carousel-nav-btn prev" onclick="prevProject('apr')">‹</button>
+                <button class="carousel-nav-btn next" onclick="nextProject('apr')">›</button>
+                <div class="projects-track" data-track="apr">
+                    <div class="project-card">
+                        <h3 class="project-title">Curso de UI/UX Design</h3>
+                        <p class="project-description">Comecei a estudar design de interface e experiência do usuário, focando em prototipagem e design thinking.</p>
+                        <span class="project-date">10 de Abril</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Certificação React</h3>
+                        <p class="project-description">Obtive certificação avançada em React, incluindo hooks, context API e performance optimization.</p>
+                        <span class="project-date">25 de Abril</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">App de Clima</h3>
+                        <p class="project-description">Desenvolvi uma aplicação de previsão do tempo consumindo APIs externas e implementando geolocalização.</p>
+                        <span class="project-date">18 de Abril</span>
                     </div>
                 </div>
+                <div class="carousel-indicators" data-indicators="apr"></div>
+            </div>
+        </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">
-                            <span class="year">2025</span>
-                            <span class="month">Fevereiro</span>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="timeline-image">
-                                <img src="/placeholder.svg?height=200&width=300" alt="Landing Page">
-                            </div>
-                            <div class="timeline-info">
-                                <h3>Landing Page Responsiva</h3>
-                                <p>Landing page moderna para startup de tecnologia com foco em conversão. Design mobile-first, animações CSS e otimização para SEO.</p>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">HTML5</span>
-                                    <span class="tech-tag">CSS3</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">SASS</span>
-                                </div>
-                                <div class="timeline-links">
-                                    <a href="#" class="timeline-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
-                                    </a>
-                                    <a href="#" class="timeline-link">
-                                        <i class="fab fa-github"></i>
-                                        Código
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Maio 2024 -->
+        <div class="month-section">
+            <div class="month-header">
+                <div class="month-icon">MAI</div>
+                <div class="month-info">
+                    <h2>Maio</h2>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="projects-carousel" data-month="may">
+                <button class="carousel-nav-btn prev" onclick="prevProject('may')">‹</button>
+                <button class="carousel-nav-btn next" onclick="nextProject('may')">›</button>
+                <div class="projects-track" data-track="may">
+                    <div class="project-card">
+                        <h3 class="project-title">Projeto E-commerce</h3>
+                        <p class="project-description">Desenvolvi uma aplicação de e-commerce completa com carrinho de compras, filtros e integração de pagamento.</p>
+                        <span class="project-date">08 de Maio</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Estudos em Node.js</h3>
+                        <p class="project-description">Comecei a aprender desenvolvimento backend com Node.js, Express e bancos de dados.</p>
+                        <span class="project-date">22 de Maio</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">API RESTful</h3>
+                        <p class="project-description">Criei minha primeira API RESTful completa com autenticação e documentação detalhada.</p>
+                        <span class="project-date">30 de Maio</span>
                     </div>
                 </div>
+                <div class="carousel-indicators" data-indicators="may"></div>
+            </div>
+        </div>
+
+        <!-- Junho 2024 -->
+        <div class="month-section">
+            <div class="month-header">
+                <div class="month-icon">JUN</div>
+                <div class="month-info">
+                    <h2>Junho</h2>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="projects-carousel" data-month="jun">
+                <button class="carousel-nav-btn prev" onclick="prevProject('jun')">‹</button>
+                <button class="carousel-nav-btn next" onclick="nextProject('jun')">›</button>
+                <div class="projects-track" data-track="jun">
+                    <div class="project-card">
+                        <h3 class="project-title">Hackathon Participação</h3>
+                        <p class="project-description">Participei do meu primeiro hackathon, desenvolvendo uma solução inovadora para sustentabilidade em 48 horas.</p>
+                        <span class="project-date">12 de Junho</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Networking Tech</h3>
+                        <p class="project-description">Participei de eventos de networking na área de tecnologia, expandindo minha rede profissional significativamente.</p>
+                        <span class="project-date">28 de Junho</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">Criei um dashboard completo com gráficos interativos usando Chart.js e integração com múltiplas APIs.</p>
+                        <span class="project-date">20 de Junho</span>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Mobile First Design</h3>
+                        <p class="project-description">Implementei metodologia mobile-first em todos os projetos, priorizando a experiência em dispositivos móveis.</p>
+                        <span class="project-date">15 de Junho</span>
+                    </div>
+                </div>
+                <div class="carousel-indicators" data-indicators="jun"></div>
+            </div>
+        </div>
 
                 <!-- 2024 -->
                 <div class="timeline-item left">
@@ -429,6 +468,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="time.js"></script>
 </body>
 </html>

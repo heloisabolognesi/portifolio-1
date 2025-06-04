@@ -643,3 +643,53 @@ if ("requestIdleCallback" in window) {
     console.log("🎯 Otimizações de performance aplicadas!")
   })
 }
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const skillItems = document.querySelectorAll('.skill-item');
+            const categories = document.querySelectorAll('.skill-category');
+
+            // Animação de entrada escalonada para as categorias
+            categories.forEach((category, index) => {
+                category.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Efeito de hover nos skill items
+            skillItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px) scale(1.05)';
+                });
+
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Parallax suave no scroll
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.5;
+                
+                categories.forEach((category, index) => {
+                    const offset = rate * (index + 1) * 0.1;
+                    category.style.transform = `translateY(${offset}px)`;
+                });
+            });
+
+            // Contador de animação para habilidades
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            categories.forEach(category => {
+                observer.observe(category);
+            });
+        });
